@@ -1,7 +1,7 @@
 function fizzbuzz(number){
 	if(number%3===0){
 		return "fizz";
-	} else if(number===5){
+	} else if(number%5===0){
 		return "buzz";
 	}else{
 		return number;
@@ -25,6 +25,9 @@ describe("fizzbuzz", function(){
 	});
 	it("fizzbuzz of 6", function(){
 		expect(fizzbuzz(6)).toBe("fizz");
+	});
+	it("fizzbuzz of 10", function(){
+		expect(fizzbuzz(10)).toBe("buzz");
 	});
 
 }); 
