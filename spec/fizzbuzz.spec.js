@@ -1,14 +1,4 @@
-function fizzbuzz(number) {
-    if (number % 15 === 0) {
-        return "fizzbuzz";
-    } else if (number % 5 === 0) {
-        return "buzz";
-    } else if (number % 3 === 0) {
-        return "fizz";
-    } else {
-        return number;
-    }
-}
+var fizzbuzz = require('../src/fizzbuzz.js');
 
 describe("fizzbuzz", function () {
     it("fizzbuzz of 1", function () {
